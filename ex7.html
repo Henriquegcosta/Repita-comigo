@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. 
+        //Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+        //Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, d
+        //eve ser solicitado um novo valor ao usuário. 
+
+        var rep = 0;
+        var nota1 = 0;
+        var nota2 = 0;
+        var nota3 = 0;
+        var nota4 = 0;
+        var nota5 = 0;
+        var nota6 = 0;
+
+        while(rep < 6){
+            var nota = parseInt(prompt(rep + " Insira a nota: "))
+
+            while(nota < 0 || nota > 10){
+                nota = parseInt(prompt(rep + " Insira uma nota acima de 0 ou abaixo de 10: "))
+            }
+
+            switch(rep){
+                case 0:
+                    nota1 = nota;
+                case 1:
+                    nota2 = nota;
+                case 2:
+                    nota3 = nota;
+                case 3:
+                    nota4 = nota;
+                case 4:
+                    nota5 = nota;
+                case 5: 
+                    nota6 = nota;   
+            }
+
+            rep++;
+
+        }
+        var media = (nota1 + nota2 + nota3 + nota4 + nota5 + nota6) / 6;
+        alert("A media desse aluno é: " + media)
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
