@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var rep = 0;
+        var fora = 0;
+        var dentro = 0;
+
+        while(rep < 10){
+            var num = parseInt(prompt("Insira um numero: "));
+
+            if(num < 24 || num > 42){
+                fora++;
+            } else {
+                dentro++;
+            }
+
+            rep++;
+        }
+
+        alert("Temos " + fora + " Numeros fora e " + dentro + " Numeros dentro");
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
